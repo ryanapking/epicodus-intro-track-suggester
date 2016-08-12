@@ -13,46 +13,53 @@
         <h1>Epicodus Track Suggester<br><small>get help choosing your track</small></h1>
       </div>
 <!-- START questions row -->
-      <div class="row">
-        <div class="col-sm-5 col-xs-offset-1">
-          <label>Question #1</label><br>
-          <input class="answer" type="radio" name="question1" value="a" checked> A.</input><br>
-          <input type="radio" name="question1" value="b"> B.</input><br>
-          <input type="radio" name="question1" value="c"> C.</input><br>
-          <input type="radio" name="question1" value="d"> D.</input><br>
-          <label>Question #2</label><br>
-          <input type="radio" name="question2" value="a" checked> A.</input><br>
-          <input type="radio" name="question2" value="b"> B.</input><br>
-          <input type="radio" name="question2" value="c"> C.</input><br>
-          <input type="radio" name="question2" value="d"> D.</input><br>
-          <label>Question #3</label><br>
-          <input type="radio" name="question3" value="a" checked> A.</input><br>
-          <input type="radio" name="question3" value="b"> B.</input><br>
-          <input type="radio" name="question3" value="c"> C.</input><br>
-          <input type="radio" name="question3" value="d"> D.</input><br>
+      <form id="questions">
+        <div class="row">
+          <div class="col-sm-5 col-xs-offset-1">
+            <label>Question #1</label><br>
+            <input class="answer" type="radio" name="question1" value="a" checked> A.</input><br>
+            <input type="radio" name="question1" value="b"> B.</input><br>
+            <input type="radio" name="question1" value="c"> C.</input><br>
+            <input type="radio" name="question1" value="d"> D.</input><br>
+            <label>Question #2</label><br>
+            <input type="radio" name="question2" value="a" checked> A.</input><br>
+            <input type="radio" name="question2" value="b"> B.</input><br>
+            <input type="radio" name="question2" value="c"> C.</input><br>
+            <input type="radio" name="question2" value="d"> D.</input><br>
+            <label>Question #3</label><br>
+            <input type="radio" name="question3" value="a" checked> A.</input><br>
+            <input type="radio" name="question3" value="b"> B.</input><br>
+            <input type="radio" name="question3" value="c"> C.</input><br>
+            <input type="radio" name="question3" value="d"> D.</input><br>
+          </div>
+          <div class="col-sm-5 col-xs-offset-1">
+            <label>Question #4</label><br>
+            <input type="radio" name="question4" value="a" checked> A.</input><br>
+            <input type="radio" name="question4" value="b"> B.</input><br>
+            <input type="radio" name="question4" value="c"> C.</input><br>
+            <input type="radio" name="question4" value="d"> D.</input><br>
+            <label>Question #5</label><br>
+            <input type="radio" name="question5" value="a" checked> A.</input><br>
+            <input type="radio" name="question5" value="b"> B.</input><br>
+            <input type="radio" name="question5" value="c"> C.</input><br>
+            <input type="radio" name="question5" value="d"> D.</input><br>
+            <label>Question #6</label><br>
+            <input type="radio" name="question6" value="a" checked> A.</input><br>
+            <input type="radio" name="question6" value="b"> B.</input><br>
+            <input type="radio" name="question6" value="c"> C.</input><br>
+            <input type="radio" name="question6" value="d"> D.</input><br>
+          </div>
+
         </div>
-        <div class="col-sm-5 col-xs-offset-1">
-          <label>Question #4</label><br>
-          <input type="radio" name="question4" value="a" checked> A.</input><br>
-          <input type="radio" name="question4" value="b"> B.</input><br>
-          <input type="radio" name="question4" value="c"> C.</input><br>
-          <input type="radio" name="question4" value="d"> D.</input><br>
-          <label>Question #5</label><br>
-          <input type="radio" name="question5" value="a" checked> A.</input><br>
-          <input type="radio" name="question5" value="b"> B.</input><br>
-          <input type="radio" name="question5" value="c"> C.</input><br>
-          <input type="radio" name="question5" value="d"> D.</input><br>
-          <label>Question #6</label><br>
-          <input type="radio" name="question6" value="a" checked> A.</input><br>
-          <input type="radio" name="question6" value="b"> B.</input><br>
-          <input type="radio" name="question6" value="c"> C.</input><br>
-          <input type="radio" name="question6" value="d"> D.</input><br>
+        <div class="row">
+          <div class="col-sm-6">
+            <input type="submit" value="Submit Answers" class="btn btn-success"></input>
+            <input type="button" value="Start Over" id="clearBtn" class="btn btn-default"></button>
+          </div>
         </div>
-      </div>
+      </form>
 <!-- END questions row-->
 <!-- START results -->
-      <button id="submitBtn" class="btn btn-success">Submit Answers</button>
-      <button id="clearBtn" class="btn btn-default">Start Over</button>
       <div class="row" id="design">
         <div class="col-sm-6">
           <h3>Design</h3>

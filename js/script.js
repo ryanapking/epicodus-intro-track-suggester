@@ -44,7 +44,7 @@ var displayResults = function() {
 // Start Front-end Logic
 
 $(document).ready(function() {
-  $("#submitBtn").click(function() {
+  $("#questions").submit(function(event) {
     a = b = c = d = 0;
     clearDisplay();
     logAnswer($("input:radio[name='question1']:checked").val());
@@ -55,6 +55,7 @@ $(document).ready(function() {
     logAnswer($("input:radio[name='question6']:checked").val());
     console.log(a, b, c, d);
     displayResults();
+    event.preventDefault();
   });
 
   $("#clearBtn").click(function() {
