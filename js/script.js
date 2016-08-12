@@ -15,9 +15,10 @@ var logAnswer = function(answer) {
   if (answer.includes("j")) {
     jav = jav + 1;
   }
-  if { answer.includes("r"))
+  if (answer.includes("r")) {
     ruby = ruby + 1;
   }
+
 };
 
 var clearDisplay = function() {
@@ -29,7 +30,7 @@ var clearDisplay = function() {
 }
 
 var displayResults = function() {
-  if (design > cSharp && design > java && design > ruby) {
+  if (design > cSharp && design > jav && design > ruby) {
     $("#design").slideDown();
   } else if (cSharp > design && cSharp > jav && cSharp > ruby) {
     $("#csharp").slideDown();
@@ -47,7 +48,7 @@ var displayResults = function() {
 
 $(document).ready(function() {
   $("#questions").submit(function(event) {
-    a = b = c = d = 0;
+    design = cSharp = jav = ruby = 0;
     clearDisplay();
     logAnswer($("input:radio[name='question1']:checked").val());
     logAnswer($("input:radio[name='question2']:checked").val());
@@ -55,7 +56,7 @@ $(document).ready(function() {
     logAnswer($("input:radio[name='question4']:checked").val());
     logAnswer($("input:radio[name='question5']:checked").val());
     logAnswer($("input:radio[name='question6']:checked").val());
-    console.log(a, b, c, d);
+    console.log(design, cSharp, jav, ruby);
     displayResults();
     event.preventDefault();
   });
