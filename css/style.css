@@ -11,10 +11,15 @@ input[type=radio] {
   float: right;
 }
 
-#design, #csharp, #java, #ruby, #inconclusive {
-  display: none;
+.link {
+  color: #0645AD;
+  text-decoration: underline;
 }
 
-#dropdown {
-  float: right;
+.results p {
+  margin: 5%;
+}
+
+#design, #csharp, #java, #ruby, #inconclusive {
+  display: none;
 }

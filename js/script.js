@@ -1,19 +1,22 @@
-var a = 0;
-var b = 0;
-var c = 0;
-var d = 0;
+var design = 0;
+var cSharp = 0;
+var jav = 0;
+var ruby = 0;
 
 // Start Business Logic
 
 var logAnswer = function(answer) {
-  if (answer === "a") {
-    a = a + 1;
-  } else if (answer ==="b") {
-    b = b + 1;
-  } else if (answer === "c") {
-    c = c + 1;
-  } else {
-    d = d + 1;
+  if (answer.includes("d")) {
+    design = design + 1;
+  }
+  if (answer.includes("c")) {
+    cSharp = cSharp + 1;
+  }
+  if (answer.includes("j")) {
+    jav = jav + 1;
+  }
+  if { answer.includes("r"))
+    ruby = ruby + 1;
   }
 };
 
@@ -26,13 +29,13 @@ var clearDisplay = function() {
 }
 
 var displayResults = function() {
-  if (a > b && a > c && a > d) {
+  if (design > cSharp && design > java && design > ruby) {
     $("#design").slideDown();
-  } else if (b > a && b > c && b > d) {
+  } else if (cSharp > design && cSharp > jav && cSharp > ruby) {
     $("#csharp").slideDown();
-  } else if (c > a && c > b && c > d) {
+  } else if (jav > design && jav > cSharp && jav > ruby) {
     $("#java").slideDown();
-  } else if (d > a && d > b && d > c)  {
+  } else if (ruby > design && ruby > cSharp && ruby > jav)  {
     $("#ruby").slideDown();
   } else {
     $("#inconclusive").slideDown();
