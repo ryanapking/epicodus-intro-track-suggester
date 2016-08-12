@@ -1,10 +1,8 @@
+// Start Business Logic
 var design = 0;
 var cSharp = 0;
 var jav = 0;
 var ruby = 0;
-
-// Start Business Logic
-
 var logAnswer = function(answer) {
   if (answer.includes("d")) {
     design = design + 1;
@@ -19,7 +17,6 @@ var logAnswer = function(answer) {
     ruby = ruby + 1;
   }
 };
-
 var clearDisplay = function() {
   $("#design").slideUp();
   $("#csharp").slideUp();
@@ -27,7 +24,6 @@ var clearDisplay = function() {
   $("#java").slideUp();
   $("#inconclusive").slideUp();
 };
-
 var displayResults = function() {
   if (design > cSharp && design > jav && design > ruby) {
     $("#design").slideDown();
@@ -39,10 +35,8 @@ var displayResults = function() {
     $("#ruby").slideDown();
   } else {
     inconclusive();
-    // $("#inconclusive").slideDown();
   }
 };
-
 var inconclusive = function() {
   var score = Math.max(design, cSharp, jav, ruby);
   $("#inconclusive").slideDown();
@@ -61,7 +55,6 @@ var inconclusive = function() {
 }
 
 // Start Front-end Logic
-
 $(document).ready(function() {
   $("#questions").submit(function(event) {
     design = cSharp = jav = ruby = 0;
@@ -85,5 +78,4 @@ $(document).ready(function() {
     $("input:radio[name='question5'][value='cj']").prop("checked", true);
     $("input:radio[name='question6'][value='r']").prop("checked", true);
   });
-
 });

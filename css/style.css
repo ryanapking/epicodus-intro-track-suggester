@@ -2,34 +2,27 @@ input[type=radio] {
   margin-bottom: 10px;
   width: 6%;
 }
-
 img {
   display: block;
   margin: auto;
 }
-
 .answer {
   width: 80%;
   display: inline-block;
 }
-
 .btn {
   margin-top: 15px;
 }
-
 .dropdown {
   float: right;
 }
-
 .link {
   color: #0645AD;
   text-decoration: underline;
 }
-
 .results p {
   margin: 5%;
 }
-
 #design, #csharp, #java, #ruby, #inconclusive {
   display: none;
 }
