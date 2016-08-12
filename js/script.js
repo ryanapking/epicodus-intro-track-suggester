@@ -17,11 +17,36 @@ var logAnswer = function(answer) {
   }
 };
 
+var clearDisplay = function() {
+  $("#design").slideUp();
+  $("#csharp").slideUp();
+  $("#ruby").slideUp();
+  $("#java").slideUp();
+  $("#inconclusive").slideUp();
+}
+
+var displayResults = function() {
+  if (a > b && a > c && a > d) {
+    $("#design").slideDown();
+  } else if (b > a && b > c && b > d) {
+    $("#csharp").slideDown();
+  } else if (c > a && c > b && c > d) {
+    $("#java").slideDown();
+  } else if (d > a && d > b && d > c)  {
+    $("#ruby").slideDown();
+  } else {
+    $("#inconclusive").show();
+  }
+
+
+}
+
 // Start Front-end Logic
 
 $(document).ready(function() {
   $("#submitBtn").click(function() {
     a = b = c = d = 0;
+    clearDisplay();
     logAnswer($("input:radio[name='question1']:checked").val());
     logAnswer($("input:radio[name='question2']:checked").val());
     logAnswer($("input:radio[name='question3']:checked").val());
@@ -29,13 +54,11 @@ $(document).ready(function() {
     logAnswer($("input:radio[name='question5']:checked").val());
     logAnswer($("input:radio[name='question6']:checked").val());
     console.log(a, b, c, d);
+    displayResults();
   });
 
   $("#clearBtn").click(function() {
-    $("#design").hide();
-    $("#csharp").hide();
-    $("#ruby").hide();
-    $("#java").hide();
+    clearDisplay();
     $("input:radio[name='question1'][value='a']").prop("checked", true);
     $("input:radio[name='question2'][value='a']").prop("checked", true);
     $("input:radio[name='question3'][value='a']").prop("checked", true);

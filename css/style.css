@@ -6,3 +6,7 @@ input[type=radio] {
 button {
   margin-top: 15px;
 }
+
+#design, #csharp, #java, #ruby, #inconclusive {
+  display: none;
+}
