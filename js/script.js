@@ -62,12 +62,12 @@ $(document).ready(function() {
   });
   $("#clearBtn").click(function() {
     clearDisplay();
-    $("input:radio[name='question1'][value='a']").prop("checked", true);
-    $("input:radio[name='question2'][value='a']").prop("checked", true);
-    $("input:radio[name='question3'][value='a']").prop("checked", true);
-    $("input:radio[name='question4'][value='a']").prop("checked", true);
-    $("input:radio[name='question5'][value='a']").prop("checked", true);
-    $("input:radio[name='question6'][value='a']").prop("checked", true);
+    $("input:radio[name='question1'][value='dcjr']").prop("checked", true);
+    $("input:radio[name='question2'][value='r']").prop("checked", true);
+    $("input:radio[name='question3'][value='c']").prop("checked", true);
+    $("input:radio[name='question4'][value='cj']").prop("checked", true);
+    $("input:radio[name='question5'][value='cj']").prop("checked", true);
+    $("input:radio[name='question6'][value='r']").prop("checked", true);
   });
 
 });
