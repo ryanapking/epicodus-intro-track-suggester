@@ -20,7 +20,6 @@ var logAnswer = function(answer) {
 // Start Front-end Logic
 
 $(document).ready(function() {
-
   $("#submitBtn").click(function() {
     a = b = c = d = 0;
     logAnswer($("input:radio[name='question1']:checked").val());
