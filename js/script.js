@@ -35,9 +35,8 @@ var displayResults = function() {
   } else if (d > a && d > b && d > c)  {
     $("#ruby").slideDown();
   } else {
-    $("#inconclusive").show();
+    $("#inconclusive").slideDown();
   }
-
 
 }
 
@@ -57,7 +56,6 @@ $(document).ready(function() {
     displayResults();
     event.preventDefault();
   });
-
   $("#clearBtn").click(function() {
     clearDisplay();
     $("input:radio[name='question1'][value='a']").prop("checked", true);
