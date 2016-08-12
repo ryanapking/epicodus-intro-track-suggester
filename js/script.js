@@ -18,7 +18,6 @@ var logAnswer = function(answer) {
   if (answer.includes("r")) {
     ruby = ruby + 1;
   }
-
 };
 
 var clearDisplay = function() {
@@ -27,7 +26,7 @@ var clearDisplay = function() {
   $("#ruby").slideUp();
   $("#java").slideUp();
   $("#inconclusive").slideUp();
-}
+};
 
 var displayResults = function() {
   if (design > cSharp && design > jav && design > ruby) {
@@ -39,9 +38,26 @@ var displayResults = function() {
   } else if (ruby > design && ruby > cSharp && ruby > jav)  {
     $("#ruby").slideDown();
   } else {
-    $("#inconclusive").slideDown();
+    inconclusive();
+    // $("#inconclusive").slideDown();
   }
+};
 
+var inconclusive = function() {
+  var score = Math.max(design, cSharp, jav, ruby);
+  $("#inconclusive").slideDown();
+  if (design === score) {
+    $("#design").slideDown();
+  }
+  if (cSharp === score) {
+    $("#csharp").slideDown();
+  }
+  if (jav === score) {
+    $("#java").slideDown();
+  }
+  if (ruby === score) {
+    $("#ruby").slideDown();
+  }
 }
 
 // Start Front-end Logic
