@@ -31,4 +31,17 @@ $(document).ready(function() {
     console.log(a, b, c, d);
   });
 
+  $("#clearBtn").click(function() {
+    $("#design").hide();
+    $("#csharp").hide();
+    $("#ruby").hide();
+    $("#java").hide();
+    $("input:radio[name='question1'][value='a']").prop("checked", true);
+    $("input:radio[name='question2'][value='a']").prop("checked", true);
+    $("input:radio[name='question3'][value='a']").prop("checked", true);
+    $("input:radio[name='question4'][value='a']").prop("checked", true);
+    $("input:radio[name='question5'][value='a']").prop("checked", true);
+    $("input:radio[name='question6'][value='a']").prop("checked", true);
+  });
+
 });

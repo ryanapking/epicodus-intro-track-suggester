@@ -1,3 +1,8 @@
-label {
-  display: table-cell;
+input[type=radio] {
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 15px;
 }
