@@ -10,8 +10,8 @@ _The webpage provides the user with a brief questionnaire designed to help them 
 
 ## Setup/Installation Requirements
 
-* _Web browser needed_
 * _Open index.html in web browser_
+* _Or view the project on [GitHub Pages](https://ryanapking.github.io/epicodus-intro-track-suggester/)_
 
 _Webpage has been tested using Google Chrome._
 
